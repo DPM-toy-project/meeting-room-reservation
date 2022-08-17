@@ -16,7 +16,7 @@ const Template: StoryFn<typeof Toggle> = (args) => ({
   setup() {
     return { args };
   },
-  template: '<Toggle v-model:value="args.value"/>',
+  template: '<Toggle v-bind="args"/>',
 });
 
 export const Default = Template.bind({});
